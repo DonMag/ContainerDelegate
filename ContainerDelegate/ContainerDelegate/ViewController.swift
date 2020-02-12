@@ -13,17 +13,17 @@ class MyControlsViewController: UIViewController {
 	var delegate: MyControlsDelegate?
 	
 	@IBAction func redTapped(_ sender: Any) {
-		delegate?.changeBackground(UIColor.red)
+		delegate?.colorButtonTapped(UIColor.red)
 	}
 	
 	@IBAction func greenTapped(_ sender: Any) {
-		delegate?.changeBackground(UIColor.green)
+		delegate?.colorButtonTapped(UIColor.green)
 	}
 	
 }
 
 protocol MyControlsDelegate {
-	func changeBackground(_ toColor:UIColor)
+	func colorButtonTapped(_ toColor:UIColor)
 }
 
 class ViewController: UIViewController, MyControlsDelegate {
@@ -36,15 +36,15 @@ class ViewController: UIViewController, MyControlsDelegate {
 		super.viewDidLoad()
 	}
 
-	@IBAction func redTapped(_ sender: Any) {
-		myControlsVC?.view.backgroundColor = .red
+	@IBAction func cyanTapped(_ sender: Any) {
+		myControlsVC?.view.backgroundColor = .cyan
 	}
 
-	@IBAction func greenTapped(_ sender: Any) {
-		myControlsVC?.view.backgroundColor = .green
+	@IBAction func orangeTapped(_ sender: Any) {
+		myControlsVC?.view.backgroundColor = .orange
 	}
 	
-	func changeBackground(_ toColor: UIColor) {
+	func colorButtonTapped(_ toColor: UIColor) {
 		theLabel.backgroundColor = toColor
 	}
 

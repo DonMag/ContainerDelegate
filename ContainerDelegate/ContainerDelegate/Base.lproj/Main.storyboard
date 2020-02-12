@@ -41,19 +41,17 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zxg-rh-oev">
                                         <rect key="frame" x="0.0" y="0.0" width="139.5" height="30"/>
                                         <color key="backgroundColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" title="Red"/>
+                                        <state key="normal" title="Cyan"/>
                                         <connections>
-                                            <action selector="redTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vd7-WF-XA3"/>
-                                            <action selector="redTapped:" destination="oU3-eb-zBU" eventType="touchUpInside" id="vYi-OH-clk"/>
+                                            <action selector="cyanTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bO0-uz-8Ie"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Byl-cJ-QdW">
                                         <rect key="frame" x="155.5" y="0.0" width="139.5" height="30"/>
                                         <color key="backgroundColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" title="Green"/>
+                                        <state key="normal" title="Orange"/>
                                         <connections>
-                                            <action selector="greenTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DRi-9O-Fkc"/>
-                                            <action selector="greenTapped:" destination="oU3-eb-zBU" eventType="touchUpInside" id="KFa-w9-QIT"/>
+                                            <action selector="orangeTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rLb-3b-aYF"/>
                                         </connections>
                                     </button>
                                 </subviews>
