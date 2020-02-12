@@ -36,6 +36,14 @@ class ViewController: UIViewController, MyControlsDelegate {
 		super.viewDidLoad()
 	}
 
+	@IBAction func redTapped(_ sender: Any) {
+		myControlsVC?.view.backgroundColor = .red
+	}
+
+	@IBAction func greenTapped(_ sender: Any) {
+		myControlsVC?.view.backgroundColor = .green
+	}
+	
 	func changeBackground(_ toColor: UIColor) {
 		theLabel.backgroundColor = toColor
 	}
